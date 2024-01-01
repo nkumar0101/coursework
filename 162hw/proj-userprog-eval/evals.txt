@@ -1,0 +1,4 @@
+Name|Autograder ID (XXX)|Score|Comment
+Felix Zhu|268|22|He worked on the argument passing section, implementing quite a bit of the file operation syscalls, but mainly had a huge contribution to implementing the wait, exec, and exit syscalls.
+Stefan Pham|106|19| He was helpful in the arguments passing and debugging through some of our issues during the floating point section.
+Mitchell Wolfe|87|19| He contributed to the syscall operations, mainly the process control ones, and also helped implement the floating point operations.
