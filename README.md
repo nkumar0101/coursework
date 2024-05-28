@@ -1,1 +1,1 @@
-# Coursework projects and personal projects completed by me.
+# Coursework and personal projects completed by me.
