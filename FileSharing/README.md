@@ -1,22 +1,19 @@
-# Project 2 Starter Code
+# Secure File Storage and Sharing
 
-This repository contains the starter code for Project 2!
+This repository implements a secure file storage and sharing system designed for CS161, focusing on cryptographic techniques and secure data handling. The package allows users to initialize accounts, store and retrieve files securely, share files with other users, and revoke access when necessary.
 
-For comprehensive documentation, see the Project 2 Spec (https://cs161.org/proj2/).
+Implementation is in `client/client.go` and integration test cases are `client_test/client_test.go`. Other additional unit test cases provided in `client/client_unittest.go`. For comprehensive documentation, see the https://cs161.org/proj2/.
 
-Write your implementation in `client/client.go` and your integration tests in `client_test/client_test.go`. Optionally, you can also use `client/client_unittest.go` to write unit tests (e.g: to test your helper functions).
+Features
+ - User Initialization: Create a new user with secure credentials and encryption keys.
+ - File Storage and Retrieval: Store files securely with encrypted content and integrity checks.
+ - File Sharing: Share access to files using cryptographic invitations that allow secure, controlled file access.
+ - Access Revocation: Revoke access to files from specific users, ensuring previous keys are no longer valid.
 
-To test your implementation, run `go test -v` inside of the `client_test` directory. This will run all tests in both `client/client_unittest.go` and `client_test/client_test.go`.
+Project Structure
+ - User struct: Manages user identity and encryption keys.
+ - File struct: Handles file metadata and access control.
+ - Helper functions and methods provide secure data storage, retrieval, and sharing capabilities, relying on cryptographic primitives such as UUIDs, encryption keys, and digital signatures.
 
-## Project Members
-
-Fill in this section with the student IDs of all the members in your project group.
-
-Partner 1 SID: 3037007637
-
-Partner 2 SID (if applicable): 3037380734
-
-Also add a link to this repo below (should start with https://github.com/cs161-students/).
-
-Link to this Github repo:
-https://github.com/cs161-students/fa23-proj2-damen
+Usage
+This project was developed with limited dependencies, restricted to cryptographic libraries provided by the CS161 staff to ensure security and autograder compatibility.
